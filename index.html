@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma" rel="stylesheet">
+
+    <title>Gif Tastic</title>
+  </head>
+  <body>
+    <!--the title of the page-->
+    <h1 id='logo'>The <span id = 'cartastic'>Car Gif</span> App!</h1>
+
+    <br>
+
+    <div id='main_container'>
+      <!--the div of the appends will go in this section of the html-->
+      <div id='car_buttons'></div>
+      <!--Div to contain Animal Inputs Form-->
+      <div id='car_input_box'>
+        <form id='car_form'>
+
+          <!--Label for form-->
+          <label for = 'car_input'>Add an Animal Below!</label>
+
+          <br>
+
+          <!--Input Box-->
+          <input type='text' id='car_input'>
+
+          <br>
+
+          <!-- The submit button in this section"-->
+          <input id='add_car' type='submit'>
+        </form>
+      </div>
+
+      <!--Div to contain AJAX outputs of the animals that are input-->
+      <div id='car_images'></div>
+
+    </div>
+
+    <!-- Link in jQuery -->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <!--Link to javaScript and the API link-->
+    <script src='assets/javascript/gif.js'></script>
+
+
+
+	</body>
+</html>
