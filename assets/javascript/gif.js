@@ -77,7 +77,7 @@ $(document).ready(function () {
     //creating the url
     var key = 'NdhUEVbkbMw5RozldOGbb1uFHtCtTZMt'; //my key
     var limit = '5'; //my limit api key
-    var queryURL = 'http://api.giphy.com/v1/gifs/search?q=' + animal + '&limit=' + limit + '&api_key=' + key;
+    var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + animal + '&limit=' + limit + '&api_key=' + key;
 
     //creates ajax call for the specific animal button that is clicked
     $.ajax({ url: queryURL, method: 'GET' }).done(function (response) {
