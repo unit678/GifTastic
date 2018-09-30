@@ -50,7 +50,7 @@ $(document).ready(function () {
       alert('Sorry. No empty buttons allowed!');
     } else if (isUnigue) {
 
-      //add the new animal to the original listed
+      //add the new car to the original listed
       cars.push(newcar);
 
 
@@ -71,21 +71,21 @@ $(document).ready(function () {
     //Deletesold gifs
     $('#car_images').empty();
 
-    //Collect animal name from the data attr from the button,replacing any spaces
-    var animal = $(this).attr('data-name').replace(/ /g, '+');
+    //Collect car name from the data attr from the button,replacing any spaces
+    var car = $(this).attr('data-name').replace(/ /g, '+');
 
     //creating the url
     var key = 'NdhUEVbkbMw5RozldOGbb1uFHtCtTZMt'; //my key
     var limit = '5'; //my limit api key
-    var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + animal + '&limit=' + limit + '&api_key=' + key;
+    var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' + car + '&limit=' + limit + '&api_key=' + key;
 
-    //creates ajax call for the specific animal button that is clicked
+    //creates ajax call for the specific car button that is clicked
     $.ajax({ url: queryURL, method: 'GET' }).done(function (response) {
 
-      //loop through the json output to collect each animal
+      //loop through the json output to collect each car
       for (var i = 0; i < response.data.length; i++) {
 
-        //collect the animal gif URLs
+        //collect the car gif URLs
         var stillURL = response.data[i].images.fixed_height_still.url;//for the sill car_images
         var movingURL = response.data[i].images.fixed_height.url;//dif while movingURL
 
